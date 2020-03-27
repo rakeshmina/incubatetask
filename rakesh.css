@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+  background-attachment: fixed;
+  background-position: fixed;
+}
+.logo{
+  text-align: center;
+}
+.log-form {
+  width: 100%;
+  margin: 90px 0px;
+  text-align: center;
+  padding:2em;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+/*giving width and height to an image logo of incubate*/
+img{
+  margin-top: 20px;
+  width: 600px;
+  height:100px;
+  background-color: white;
+}
+
+
+/*Adding media query to decrease the image width*/
+@media only screen and (max-width: 650px){
+  img{
+    width: 90%;
+    height: 100px;
+  }
+}
+
+/*making space between two inout boxes*/
+div.row {
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+/*making space between top-bow line and bottom-bow line sepration; and increasing text size */
+#username,#email,#phonenumber,#message,#password,#cnfpassword{
+  width: 600px;
+  padding : 10px 4px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+input:hover{
+  border: 2px solid black;
+}
+
+
+/*increasing text size*/
+textarea{
+  padding : 10px 4px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*in upcoming few lines hovering id added for different input boxes*/
+textarea:hover{
+  border: 2px solid black;
+}
+
+
+/*making space from top ; increasing font size; makin content in a line*/
+.para{
+  padding-top: 19px;
+  font-size: 28px;
+  justify-content:   inline;
+}
+
+h3{
+  color:rgb(1000,0,0);
+  opacity: 3;
+}
+
+/* making the input circle large and giving it space from top,left and right */
+input[type="radio"]{
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transform: scale(2);
+}
+
+
+/*Adding curser to above age, below age and button*/
+#above{
+  cursor: pointer;
+}
+#below{
+  cursor: pointer;
+}
+
+
+/* styling of submit button*/
+.btn{
+  font-size: 30px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.btn:hover{
+  color: red;
+}
+
+
+/*making responsive with screens*/
+
+@media only screen and (max-width: 700px){
+  #username,#email,#phonenumber,#message,#password,#cnfpassword{
+    width: 90%;
+  }
+}

@@ -1,0 +1,78 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap libraries are added-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--bootstrap libraries ended here-->
+
+  <!--linking css file and javascript file-->
+  <link rel="stylesheet" type="text/css" media="screen" href="rakesh.css">
+  <script type="text/javascript" src="rakesh.js"></script>
+  
+</head>
+<body>
+  <div class="logo">
+    <img src="https://incubateind.com/images/IncubateIND%20Black.png"  alt="centered image">
+  </div>
+
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h1>Enter your details</h1>
+    <form id="rakesh">
+      <!--row justify-content-center classes are added so that it is easier to style the page -->
+
+
+      <!--here bootstrap is used for responsiveness of page for all width-size of screen-->
+      <div class="row justify-content-center">
+          <input type="text" id="username" title="username" placeholder="username" value="" />
+      </div>
+
+      <div class="row justify-content-center">
+          <input type="email" id="email" title="email" placeholder="email" value="">
+      </div>
+
+      <div class="row justify-content-center">
+          <input type="phone" id="phonenumber" title="Phone number" placeholder="123-456-78-91" pattern="[0-9]{10}" value="">
+      </div>
+
+      <div class="row justify-content-center">
+          <input type="password" id="password" title="password" placeholder="password" value="" />
+      </div>
+
+      <div class="row justify-content-center">
+          <input type="password" id="cnfpassword" title="cnfpassword" placeholder="confirm password" value="" />
+      </div>
+
+      <div class="row justify-content-center">
+          <textarea name="message" id="message"  placeholder="enter message" value=""></textarea>
+      </div>
+
+      <div class="row justify-content-center"> 
+          <h3 class="para">Age : </h3>
+          <input class="para" type="radio" id="above" name="age" value="above 18 years">
+          <label class="para" for="above"><h3>Above 18</h3></label>
+          <input class="para" type="radio" id="below" name="age" value="below 18 years">
+          <label class="para" for="below"><h3>Below 18</h3></label>
+      </div>
+      
+      <button type="submit" class="btn" onclick="myFunction();" >Submit</button>
+
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+
+  
+
+
+</body>
+</html>
